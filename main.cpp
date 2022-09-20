@@ -6,14 +6,9 @@ int main(int argc, char *argv[])
 {
     QApplication app(argc, argv);
 
-    QWidget window;
-    window.setFixedSize(500, 500);
+    SimpleBrowser MainWindow;
 
-    QPushButton *button = new QPushButton(& window);
-    button->setText("Hello");
-
-
-    window.show();
+    MainWindow.show();
 
     return app.exec();
 }
